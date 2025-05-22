@@ -1,0 +1,23 @@
+.card{
+    width: 100%;
+}
+header{
+    border-bottom: 1px solid #000;
+    padding: .5em 0;
+}
+.text{
+    width: 100%;
+    padding: .5em;
+}
+.text p{
+    font-size: 1.3em;
+}
+.bottomDetails{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 1em;
+}
