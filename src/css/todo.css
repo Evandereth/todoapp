@@ -1,0 +1,28 @@
+.wrapper{
+    width: 100%;
+    background: orange;
+    border: 1px solid #dddddd;
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    text-align: center;
+}
+.wrapper h2{
+    border: 1px solid #dddddd;
+}
+.desc{
+    width: 50%;
+}
+.tags{
+    width: 15%;
+
+}
+.status{
+    width: 15%;
+
+}
+.action{
+    width: 15%;
+}
