@@ -1,28 +1,24 @@
 .wrapper{
     width: 100%;
-    background: orange;
+    /* background: orange; */
     border: 1px solid #dddddd;
     padding: 1em 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .5em;
+}
+table{
+    width: 95%;
+    margin: 0 auto;
     text-align: center;
 }
-.wrapper h2{
+th{
+    font-size: 1.2em !important;
     border: 1px solid #dddddd;
+    padding: .3em;
 }
-.desc{
-    width: 50%;
+td{
+    border: 1px solid #dddddd;
+    padding: .3em;
+    font-size: 1em;
 }
-.tags{
-    width: 15%;
-
-}
-.status{
-    width: 15%;
-
-}
-.action{
-    width: 15%;
+table .btn{
+    padding: .3em .6em;
 }

@@ -1,25 +1,25 @@
 import "../css/todo.css"
 
+
 function TodoDetails(){
     return(
         <>
             <div className="wrapper">
-                <div className="desc">
-                    <h2>Description</h2>
-                    <p>this is a simple text</p>
-                </div>
-                <div className="tags">
-                    <h2>Tags</h2>
-                    <button>H</button>
-                </div>
-                <div className="status">
-                    <h2>Status</h2>
-                    <p>completed</p>
-                </div>
-                <div className="action">
-                    <h2>Action</h2>
-                    <button>Delete</button>
-                </div>
+                <table>
+                    <tr>
+                        <th>Description</th>
+                        <th>Tags</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>This is a simple task</td>
+                        <td><button className="btn">Html</button></td>
+                        <td>Completed</td>
+                        <td><button className="btn">Delete</button></td>
+                    </tr>
+                    
+                </table>
             </div>
         </>
     )
