@@ -17,6 +17,20 @@ function TodoForm(){
         })
         console.log(name, value)
     }
+
+    function selecTag(tag){
+        if(todos.tags.some(item=> item === tag)){
+            const filterTag = todos.tags.filter(item => item !== tag)
+            setTodos(prev =>{
+                return({...prev, tags:filterTag})
+            })
+        }else{
+            setTodos(prev => {
+                return({...prev, tags:[...prev.tags, tag]})
+            })
+        }
+    }
+    console.log(todos.tags)
     
 
     //this function prevents the submit from refresh on submit
@@ -47,10 +61,10 @@ function TodoForm(){
                     <button>Add Task</button>
                 </div>
                 <div className="theTags">
-                    <Button title="HTML"/>
-                    <Button title="CSS"/>
-                    <Button title="JavaScript"/>
-                    <Button title="ReactJs"/>
+                    <Button title="HTML" clickTag={selecTag}/>
+                    <Button title="CSS" clickTag={selecTag}/>
+                    <Button title="JavaScript" clickTag={selecTag}/>
+                    <Button title="ReactJs" clickTag={selecTag}/>
                 </div>
             </form>
         </>

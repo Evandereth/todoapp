@@ -1,8 +1,8 @@
 import "../css/button.css"
-function Button({title}){
+function Button({title, clickTag}){
     return(
         <>
-            <button>{title}</button>
+            <button onClick={()=>clickTag(title)}>{title}</button>
         </>
     )
 }
